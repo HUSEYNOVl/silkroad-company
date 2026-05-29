@@ -1,7 +1,7 @@
 'use client';
 
 import {useEffect, useRef, useState} from 'react';
-import {useMessages, useTranslations} from 'next-intl';
+import {useMessages, useTranslations, useLocale} from 'next-intl';
 import {
   motion, useInView, useMotionValue, useTransform, animate, AnimatePresence
 } from 'framer-motion';
@@ -12,9 +12,13 @@ import {
   Ship, Shirt, Sparkles, Wrench, ArrowRight, Zap, Camera, ClipboardList,
   ScanLine, Globe, Truck, Star, AlertCircle, X
 } from 'lucide-react';
+import Image from 'next/image';
 import {Link} from '@/lib/navigation';
 import {fadeUp, stagger, viewport} from '@/lib/motion';
 import {useAIChat} from '@/contexts/AIChatContext';
+import {loc} from '@/lib/sanity/types';
+import {urlForImage} from '@/lib/sanity/image';
+import type {SanityHomepage, SanityCategory, SanityService, SanityFaq, SanityCaseStudy, SanityRegionalRoute} from '@/lib/sanity/types';
 
 type Pair = [string, string];
 type LinkItem = {label: string; href: string};
@@ -70,23 +74,32 @@ const categoryMOQ: Record<string, string> = {
 
 /* ─────────────────────────────────────────────────────────────────────────── */
 
-export function HomeContent() {
+interface HomeContentProps {
+  cmsHomepage?: SanityHomepage | null;
+  cmsCategories?: SanityCategory[];
+  cmsServices?: SanityService[];
+  cmsFaqs?: SanityFaq[];
+  cmsCaseStudies?: SanityCaseStudy[];
+  cmsRoutes?: SanityRegionalRoute[];
+}
+
+export function HomeContent({cmsHomepage, cmsCategories = [], cmsServices = [], cmsFaqs = [], cmsCaseStudies = [], cmsRoutes = []}: HomeContentProps) {
   const messages = useMessages() as unknown as HomeMessages;
 
   return (
     <>
-      <Hero />
-      <TrustBar stats={messages.home.trust.stats} />
+      <Hero cmsData={cmsHomepage} />
+      <TrustBar stats={messages.home.trust.stats} cmsStats={cmsHomepage?.trustStats} />
       <AiDiscoverySection />
-      <CategoryCardsSection items={messages.home.categories.items} />
-      <ToolsSection items={messages.home.services.items} />
+      <CategoryCardsSection items={messages.home.categories.items} cmsItems={cmsCategories} />
+      <ToolsSection items={messages.home.services.items} cmsItems={cmsServices} />
       <AICenterSection />
-      <ProcessSteps items={messages.home.process.items} />
+      <ProcessSteps items={messages.home.process.items} cmsSteps={cmsHomepage?.processSteps} />
       <SupplierComparisonSection />
       <QualityProcess stages={messages.home.quality.stages} />
-      <RegionalMap countries={messages.home.regional.countries} />
-      <CaseStudiesSection items={messages.home.caseStudies.items} />
-      <FaqSection items={messages.home.faq.items} />
+      <RegionalMap countries={messages.home.regional.countries} cmsRoutes={cmsRoutes} cmsQuote={cmsHomepage?.regionalQuote} />
+      <CaseStudiesSection items={messages.home.caseStudies.items} cmsItems={cmsCaseStudies} />
+      <FaqSection items={messages.home.faq.items} cmsItems={cmsFaqs} />
       <FinalCta />
       <script
         type="application/ld+json"
@@ -120,17 +133,33 @@ export function HomeContent() {
 
 /* ─── Hero ─────────────────────────────────────────────────────────────────── */
 
-function Hero() {
+function Hero({cmsData}: {cmsData?: SanityHomepage | null}) {
   const t = useTranslations('home.hero');
+  const locale = useLocale();
   const {open: openChat} = useAIChat();
-  const trustItems = t.raw('trustItems') as string[];
+  const fallbackTrustItems = t.raw('trustItems') as string[];
+
+  const eyebrow = loc(cmsData?.heroEyebrow, locale) || t('eyebrow');
+  const title = loc(cmsData?.heroTitle, locale) || t('title');
+  const subtitle = loc(cmsData?.heroSubtitle, locale) || t('subtitle');
+  const primaryCta = loc(cmsData?.heroPrimaryCta, locale) || t('primaryCta');
+  const secondaryCta = loc(cmsData?.heroSecondaryCta, locale) || t('secondaryCta');
+
+  // Hero background: CMS image > local image > white
+  const cmsBgUrl = cmsData?.heroBackgroundImage ? urlForImage(cmsData.heroBackgroundImage, 1920) : '';
+  const bgUrl = cmsBgUrl || '/images/backgroundimage.png';
+
+  // Trust items: CMS > fallback from messages
+  const trustItems: string[] = cmsData?.heroTrustItems?.length
+    ? cmsData.heroTrustItems.map((item) => loc(item, locale) || loc(item, 'en') || '').filter(Boolean)
+    : fallbackTrustItems;
 
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{backgroundImage: 'url(/images/backgroundimage.png)'}}
+        style={{backgroundImage: `url(${bgUrl})`}}
       />
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-white/70" />
@@ -154,13 +183,13 @@ function Hero() {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_6px_rgba(0,113,227,0.8)]" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-accent">
-              {t('eyebrow')}
+              {eyebrow}
             </span>
           </motion.div>
 
           {/* Headline */}
           <h1 className="mt-5 font-sans font-bold leading-[1.06] tracking-tight text-fg-primary text-[2.4rem] md:text-[3.2rem] xl:text-[4rem]">
-            {t('title').split(' ').map((word, i) => (
+            {title.split(' ').map((word, i) => (
               <span key={`${word}-${i}`} className="inline-block overflow-hidden me-[0.22em]">
                 <motion.span
                   className="inline-block"
@@ -181,7 +210,7 @@ function Hero() {
             transition={{duration: 0.55, delay: 0.65}}
             className="mx-auto mt-5 max-w-[600px] text-base leading-[1.75] text-fg-secondary md:text-[17px]"
           >
-            {t('subtitle')}
+            {subtitle}
           </motion.p>
 
           {/* CTA buttons */}
@@ -197,14 +226,14 @@ function Hero() {
               className="inline-flex h-12 items-center gap-2 rounded-full bg-accent px-7 text-sm font-semibold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_28px_rgba(0,113,227,0.40)] hover:scale-[1.02]"
             >
               <Bot className="h-4 w-4" aria-hidden />
-              {t('primaryCta')}
+              {primaryCta}
               <ArrowRight className="h-4 w-4" aria-hidden />
             </button>
             <Link
               href="/quote"
               className="inline-flex h-12 items-center gap-2 rounded-full border border-fg-primary/12 bg-bg-secondary px-7 text-sm font-semibold text-fg-secondary transition-all duration-200 hover:border-accent/25 hover:text-fg-primary hover:bg-white"
             >
-              {t('secondaryCta')}
+              {secondaryCta}
             </Link>
           </motion.div>
 
@@ -247,12 +276,19 @@ function Hero() {
 
 /* ─── TrustBar ─────────────────────────────────────────────────────────────── */
 
-function TrustBar({stats}: {stats: Pair[]}) {
+function TrustBar({stats, cmsStats}: {stats: Pair[]; cmsStats?: SanityHomepage['trustStats']}) {
+  const locale = useLocale();
+
+  // Use CMS stats if available and have data, else fall back to messages
+  const displayStats: Pair[] = cmsStats && cmsStats.length > 0
+    ? cmsStats.map((s) => [s.value, loc(s.label, locale) || loc(s.label, 'en') || ''] as Pair)
+    : stats;
+
   return (
     <section className="border-y border-[rgba(0,0,0,0.06)] bg-bg-secondary py-0">
       <div className="container-grid">
         <div className="grid grid-cols-2 md:grid-cols-5">
-          {stats.map(([value, label], index) => (
+          {displayStats.map(([value, label], index) => (
             <div
               key={label}
               className="flex flex-col items-center py-7 text-center md:border-s md:border-[rgba(0,0,0,0.06)] first:border-s-0"
@@ -382,8 +418,27 @@ function AiDiscoverySection() {
 
 /* ─── Category Cards Section ───────────────────────────────────────────────── */
 
-function CategoryCardsSection({items}: {items: CategoryCard[]}) {
+function CategoryCardsSection({items, cmsItems}: {items: CategoryCard[]; cmsItems: SanityCategory[]}) {
   const t = useTranslations('home.categories');
+  const locale = useLocale();
+
+  // Build display items: CMS first, fall back to messages
+  const displayItems = cmsItems.length > 0
+    ? cmsItems.slice(0, 8).map((c) => ({
+        slug: c.slug.current,
+        name: loc(c.name, locale) || loc(c.name, 'en') || c.slug.current,
+        moq: c.moqRange ?? '100–2,000',
+        hasOEM: c.hasOEM ?? true,
+        hasInspection: c.hasInspection ?? true,
+      }))
+    : items.slice(0, 8).map((item) => ({
+        slug: item.slug,
+        name: item.name,
+        moq: categoryMOQ[item.slug] ?? '100–2,000',
+        hasOEM: true,
+        hasInspection: true,
+      }));
+
   return (
     <section className="bg-bg-secondary py-24">
       <div className="container-grid">
@@ -395,9 +450,9 @@ function CategoryCardsSection({items}: {items: CategoryCard[]}) {
           viewport={viewport}
           className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4"
         >
-          {items.slice(0, 8).map((item) => {
+          {displayItems.map((item) => {
             const Icon = categoryIcons[item.slug] ?? Package;
-            const moq = categoryMOQ[item.slug] ?? '100–2,000';
+            const moq = item.moq;
             return (
               <motion.article
                 key={item.slug}
@@ -410,8 +465,8 @@ function CategoryCardsSection({items}: {items: CategoryCard[]}) {
                 <h3 className="mt-3 text-sm font-semibold text-fg-primary">{item.name}</h3>
                 <div className="mt-3 space-y-1.5">
                   <DataRow label="MOQ" value={`${moq} units`} />
-                  <DataRow label="OEM" value="Available" positive />
-                  <DataRow label="Inspection" value="Included" positive />
+                  <DataRow label="OEM" value={item.hasOEM ? 'Available' : 'N/A'} positive={item.hasOEM} />
+                  <DataRow label="Inspection" value={item.hasInspection ? 'Included' : 'N/A'} positive={item.hasInspection} />
                 </div>
                 <Link
                   href={{pathname: '/categories/[category]', params: {category: item.slug}}}
@@ -460,8 +515,19 @@ function DataRow({label, value, positive = false}: {label: string; value: string
 
 const toolBadges = ['AI-powered', 'Core', 'Core', 'Core', 'Core', 'Core', 'Core', 'Instant'];
 
-function ToolsSection({items}: {items: ServiceCard[]}) {
+function ToolsSection({items, cmsItems}: {items: ServiceCard[]; cmsItems: SanityService[]}) {
   const t = useTranslations('home.tools');
+  const locale = useLocale();
+
+  // Merge: CMS services if available, else messages
+  const displayItems: ServiceCard[] = cmsItems.length > 0
+    ? cmsItems.map((s) => ({
+        title: loc(s.title, locale) || loc(s.title, 'en') || '',
+        text: loc(s.description, locale) || loc(s.description, 'en') || '',
+        href: `/services/${s.slug.current}`,
+      }))
+    : items;
+
   return (
     <section className="bg-white py-24">
       <div className="container-grid">
@@ -473,7 +539,7 @@ function ToolsSection({items}: {items: ServiceCard[]}) {
           viewport={viewport}
           className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-4"
         >
-          {items.map((item, index) => {
+          {displayItems.map((item, index) => {
             const Icon = toolIcons[index] ?? Search;
             const badge = toolBadges[index] ?? 'Core';
             return (
@@ -622,14 +688,23 @@ function AICenterSection() {
 
 /* ─── Process Steps ────────────────────────────────────────────────────────── */
 
-function ProcessSteps({items}: {items: Pair[]}) {
+function ProcessSteps({items, cmsSteps}: {items: Pair[]; cmsSteps?: SanityHomepage['processSteps']}) {
   const t = useTranslations('home.process');
+  const locale = useLocale();
+
+  const displayItems: Pair[] = cmsSteps && cmsSteps.length > 0
+    ? cmsSteps.map((s) => [
+        loc(s.title, locale) || loc(s.title, 'en') || '',
+        loc(s.text, locale) || loc(s.text, 'en') || '',
+      ] as Pair)
+    : items;
+
   return (
     <section className="bg-white py-24">
       <div className="container-grid">
         <SectionIntro eyebrow={t('eyebrow')} title={t('title')} />
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map(([title, text], index) => (
+          {displayItems.map(([title, text], index) => (
             <motion.article
               key={title}
               variants={fadeUp}
@@ -918,8 +993,23 @@ function QualityProcess({stages}: {stages: Pair[]}) {
 
 /* ─── Regional Map ─────────────────────────────────────────────────────────── */
 
-function RegionalMap({countries}: {countries: string[]}) {
+function RegionalMap({countries, cmsRoutes, cmsQuote}: {countries: string[]; cmsRoutes: SanityRegionalRoute[]; cmsQuote?: any}) {
   const t = useTranslations('home.regional');
+  const locale = useLocale();
+
+  const fallbackRoutes = [
+    {from: 'Guangzhou', to: 'Baku', flag: '🇦🇿', mode: 'Sea + Land', days: '15–20d'},
+    {from: 'Guangzhou', to: 'Istanbul', flag: '🇹🇷', mode: 'Sea / Air', days: '20–35d'},
+    {from: 'Guangzhou', to: 'Dubai', flag: '🇦🇪', mode: 'Sea / Air', days: '15–25d'},
+    {from: 'Guangzhou', to: 'Moscow', flag: '🇷🇺', mode: 'Rail / Sea', days: '18–28d'},
+    {from: 'Guangzhou', to: 'Berlin', flag: '🇩🇪', mode: 'Sea / Rail', days: '25–35d'},
+  ];
+  const displayRoutes = cmsRoutes.length > 0
+    ? cmsRoutes.map((r) => ({from: r.from ?? 'Guangzhou', to: r.to, flag: r.flag ?? '', mode: r.mode ?? '', days: r.days ?? ''}))
+    : fallbackRoutes;
+
+  const quote = loc(cmsQuote, locale) || loc(cmsQuote, 'en') || '"Biz digər sourcing agentlərinin çoxunun bilmədiyi ticarət marşrutlarını yaxşı tanıyırıq."';
+
   return (
     <section id="regional" className="relative overflow-hidden bg-fg-primary py-24 text-white">
       <div className="absolute inset-0 opacity-[0.04]"
@@ -931,13 +1021,7 @@ function RegionalMap({countries}: {countries: string[]}) {
 
         {/* Route cards */}
         <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-          {[
-            {from: 'Guangzhou', to: 'Baku', flag: '🇦🇿', mode: 'Sea + Land', days: '15–20d'},
-            {from: 'Guangzhou', to: 'Istanbul', flag: '🇹🇷', mode: 'Sea / Air', days: '20–35d'},
-            {from: 'Guangzhou', to: 'Dubai', flag: '🇦🇪', mode: 'Sea / Air', days: '15–25d'},
-            {from: 'Guangzhou', to: 'Moscow', flag: '🇷🇺', mode: 'Rail / Sea', days: '18–28d'},
-            {from: 'Guangzhou', to: 'Berlin', flag: '🇩🇪', mode: 'Sea / Rail', days: '25–35d'},
-          ].map(({from, to, flag, mode, days}) => (
+          {displayRoutes.map(({from, to, flag, mode, days}) => (
             <div key={to} className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all hover:border-accent/30 hover:bg-white/8">
               <div className="flex items-center gap-2">
                 <span className="text-lg">{flag}</span>
@@ -972,10 +1056,12 @@ function RegionalMap({countries}: {countries: string[]}) {
           ))}
         </div>
 
-        {/* Azerbaijani note */}
-        <p className="mt-8 max-w-2xl text-sm italic text-white/35">
-          &ldquo;Biz digər sourcing agentlərinin çoxunun bilmədiyi ticarət marşrutlarını yaxşı tanıyırıq.&rdquo;
-        </p>
+        {/* Regional quote */}
+        {quote && (
+          <p className="mt-8 max-w-2xl text-sm italic text-white/35">
+            &ldquo;{quote}&rdquo;
+          </p>
+        )}
       </div>
     </section>
   );
@@ -983,14 +1069,27 @@ function RegionalMap({countries}: {countries: string[]}) {
 
 /* ─── Case Studies ─────────────────────────────────────────────────────────── */
 
-function CaseStudiesSection({items}: {items: CaseStudy[]}) {
+function CaseStudiesSection({items, cmsItems}: {items: CaseStudy[]; cmsItems: SanityCaseStudy[]}) {
   const t = useTranslations('home.caseStudies');
+  const locale = useLocale();
+
+  // Build display items: CMS first, else messages
+  const displayItems: CaseStudy[] = cmsItems.length > 0
+    ? cmsItems.map((c) => ({
+        tag: loc(c.tag, locale) || loc(c.tag, 'en') || '',
+        destination: c.destination ?? '',
+        title: loc(c.title, locale) || loc(c.title, 'en') || '',
+        metrics: (c.metrics ?? []).map((m) => [m.value, loc(m.label, locale) || loc(m.label, 'en') || ''] as Pair),
+        href: `/case-studies/${c.slug.current}`,
+      }))
+    : items;
+
   return (
     <section className="bg-bg-secondary py-24">
       <div className="container-grid">
         <SectionIntro eyebrow={t('eyebrow')} title={t('title')} />
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          {items.map((item) => (
+          {displayItems.map((item) => (
             <article
               key={item.href}
               className="group flex flex-col overflow-hidden rounded-2xl border border-[rgba(0,0,0,0.08)] bg-white transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_8px_32px_rgba(0,0,0,0.10)]"
@@ -1029,16 +1128,24 @@ function CaseStudiesSection({items}: {items: CaseStudy[]}) {
 
 /* ─── FAQ ──────────────────────────────────────────────────────────────────── */
 
-function FaqSection({items}: {items: FaqItem[]}) {
+function FaqSection({items, cmsItems}: {items: FaqItem[]; cmsItems: SanityFaq[]}) {
   const t = useTranslations('home.faq');
+  const locale = useLocale();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const displayItems: FaqItem[] = cmsItems.length > 0
+    ? cmsItems.map((f) => ({
+        question: loc(f.question, locale) || loc(f.question, 'en') || '',
+        answer: loc(f.answer, locale) || loc(f.answer, 'en') || '',
+      }))
+    : items;
 
   return (
     <section className="bg-white py-24">
       <div className="container-grid max-w-[760px]">
         <SectionIntro eyebrow={t('eyebrow')} title={t('title')} />
         <div className="mt-10 space-y-2">
-          {items.map((item, index) => (
+          {displayItems.map((item, index) => (
             <div key={item.question} className="overflow-hidden rounded-2xl border border-[rgba(0,0,0,0.08)] transition-colors hover:border-accent/25">
               <button
                 type="button"

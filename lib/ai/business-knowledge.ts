@@ -1,4 +1,8 @@
-export const BUSINESS_KNOWLEDGE = `
+import { getAIKnowledge } from '@/lib/sanity/queries'
+import { loc } from '@/lib/sanity/types'
+
+// Hardcoded fallback — used when CMS has no entries yet
+export const BUSINESS_KNOWLEDGE_FALLBACK = `
 1. Company: Silk Road is a China sourcing and export agent based in China. Silk Road helps international buyers source products from Chinese factories.
 
 2. Services: Product sourcing, factory search, supplier verification, price negotiation, sample arrangement, OEM/private label, custom packaging, factory audit, quality inspection, production follow-up, consolidation, warehousing, export documentation, and international shipping.
@@ -18,4 +22,33 @@ export const BUSINESS_KNOWLEDGE = `
 9. Limitations: Do not fabricate factory names, exact prices, shipping costs, or supplier ratings. Say the sourcing team will verify and provide accurate information.
 
 10. Contact: WhatsApp is the fastest way to reach the team.
-`.trim();
+`.trim()
+
+// Keep for backward compatibility
+export const BUSINESS_KNOWLEDGE = BUSINESS_KNOWLEDGE_FALLBACK
+
+/**
+ * Fetches business knowledge from Sanity CMS.
+ * Falls back to hardcoded knowledge if CMS is not configured or has no entries.
+ */
+export async function getBusinessKnowledge(locale = 'en'): Promise<string> {
+  try {
+    const entries = await getAIKnowledge(locale)
+
+    if (!entries || entries.length === 0) {
+      return BUSINESS_KNOWLEDGE_FALLBACK
+    }
+
+    const lines = entries.map((entry, i) => {
+      const content = loc(entry.content, locale) || loc(entry.content, 'en') || ''
+      if (!content) return null
+      return `${i + 1}. [${entry.topic}] ${entry.title}: ${content}`
+    }).filter(Boolean)
+
+    if (lines.length === 0) return BUSINESS_KNOWLEDGE_FALLBACK
+
+    return lines.join('\n\n')
+  } catch {
+    return BUSINESS_KNOWLEDGE_FALLBACK
+  }
+}

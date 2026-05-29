@@ -1,4 +1,3 @@
-import {BUSINESS_KNOWLEDGE} from './business-knowledge';
 import type {Lead} from '@/lib/supabase/types';
 
 const trackedFields: Array<keyof Lead> = [
@@ -22,7 +21,7 @@ const trackedFields: Array<keyof Lead> = [
   'notes'
 ];
 
-export function buildSystemPrompt(lead: Partial<Lead>, locale: string): string {
+export function buildSystemPrompt(lead: Partial<Lead>, locale: string, businessKnowledge?: string): string {
   const knownFields = trackedFields
     .filter((field) => lead[field] !== null && lead[field] !== undefined && lead[field] !== '')
     .map((field) => `${field}: ${String(lead[field])}`);
@@ -33,7 +32,7 @@ You are Aria, a senior sourcing consultant at Silk Road — a premium China whol
 
 Your personality: warm, knowledgeable, direct. You sound like a trusted expert, not a chatbot. Never use filler phrases like "Great question!" or "Of course!". Don't be sycophantic. Get to the point fast.
 
-${BUSINESS_KNOWLEDGE}
+${businessKnowledge ?? ''}
 
 Current website locale: ${locale}
 IMPORTANT: You must always answer in the language of the selected website locale above. The locale codes map to: "az" = Azerbaijani, "tr" = Turkish, "ru" = Russian, "ar" = Arabic, "en" = English.

@@ -2,6 +2,7 @@ import {openai} from '@ai-sdk/openai';
 import {streamText} from 'ai';
 import {NextRequest, NextResponse} from 'next/server';
 import {buildSystemPrompt} from '@/lib/ai/system-prompt';
+import {getBusinessKnowledge} from '@/lib/ai/business-knowledge';
 import {extractLeadData} from '@/lib/ai/lead-extractor';
 import {generateWhatsAppLink, generateWhatsAppPrefillText, shouldShowWhatsAppCta} from '@/lib/ai/whatsapp';
 import {getOrCreateSession, appendToHistory} from '@/lib/ai/session-store';
@@ -48,9 +49,11 @@ export async function POST(request: NextRequest) {
   session.lead.lead_code = session.leadCode;
   session.messageCount += 1;
 
+  const businessKnowledge = await getBusinessKnowledge(locale);
+
   const result = streamText({
     model: openai('gpt-4o-mini'),
-    system: buildSystemPrompt(session.lead, locale),
+    system: buildSystemPrompt(session.lead, locale, businessKnowledge),
     messages: [
       ...session.history,
       {role: 'user', content: message}
