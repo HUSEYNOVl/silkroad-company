@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Container ship at sea">
+  <rect width="1600" height="1000" fill="#0A0A0A"/>
+  <rect y="560" width="1600" height="440" fill="#111"/>
+  <path d="M0 638c180-42 318-42 474 0s296 42 468 0 350-42 658 0v362H0z" fill="#141414"/>
+  <path d="M350 500h760l-72 84H420z" fill="#1C1C1C"/>
+  <path d="M474 362h88v138h-88zM592 326h94v174h-94zM716 382h90v118h-90zM836 340h100v160H836z" fill="#C9A961" opacity=".72"/>
+  <path d="M266 624h1030" stroke="#C9A961" stroke-width="3" opacity=".52"/>
+  <circle cx="1300" cy="190" r="84" fill="#F5F5F0" opacity=".08"/>
+</svg>

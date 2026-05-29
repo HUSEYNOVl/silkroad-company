@@ -1,0 +1,1032 @@
+{
+  "meta": {
+    "title": "Silk Road | Çindən Məhsul Tədarükü və İxrac",
+    "description": "Ciddi idxalatçılar üçün Çindən premium məhsul tədarükü, zavod yoxlaması, keyfiyyət nəzarəti, OEM istehsalı və ixrac xidməti."
+  },
+  "nav": {
+    "brand": "Silk Road",
+    "services": "Xidmətlər",
+    "howItWorks": "Necə İşləyir",
+    "process": "Proses",
+    "categories": "Kateqoriyalar",
+    "about": "Haqqımızda",
+    "blog": "Bloq",
+    "quote": "Təklif",
+    "contact": "Əlaqə",
+    "menu": "Menyu",
+    "close": "Bağla",
+    "language": "Dil",
+    "primaryNav": "Əsas naviqasiya",
+    "quoteCta": "Təklif İstəyin",
+    "aiAssistant": "AI Asistan",
+    "servicesMenu": [
+      {
+        "href": "/services/product-sourcing",
+        "title": "Məhsul Axtarışı",
+        "text": "Məhsulunuz üçün düzgün fabrikləri tapırıq."
+      },
+      {
+        "href": "/services/factory-verification",
+        "title": "Zavod Yoxlaması",
+        "text": "Fabrik kimliyini, gücünü və etibarlılığını yoxlayırıq."
+      },
+      {
+        "href": "/services/oem-private-label",
+        "title": "OEM / Özəl Marka",
+        "text": "Brending, qablaşdırma və nümunələri koordinasiya edirik."
+      },
+      {
+        "href": "/services/quality-inspection",
+        "title": "Keyfiyyət Yoxlaması",
+        "text": "Malları Çindən çıxmadan əvvəl yoxlayırıq."
+      },
+      {
+        "href": "/services/consolidation",
+        "title": "Konsolidasiya",
+        "text": "Birdən çox təchizatçını bir göndərişdə birləşdiririk."
+      },
+      {
+        "href": "/services/shipping",
+        "title": "Çatdırılma",
+        "text": "Hava, dəniz, dəmir yolu və ya avtomobil ilə yük daşıyırıq."
+      }
+    ]
+  },
+  "footer": {
+    "mark": "Silk Road",
+    "company": "Şirkət",
+    "about": "Haqqımızda",
+    "services": "Xidmətlər",
+    "contact": "Əlaqə",
+    "legal": "Hüquqi",
+    "sourcing": "Tədarük",
+    "shipping": "Çatdırılma",
+    "customs": "Gömrük",
+    "privacy": "Məxfilik",
+    "terms": "Şərtlər",
+    "email": "hello@sarkhan.com",
+    "emailLabel": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Bakı, Azərbaycan",
+    "copyright": "© 2026 Silk Road. Sarkhan Hüseynov tərəfindən, Bakı.",
+    "description": "Çindən qapınıza tam idxal xidməti. İstənilən məhsul, istənilən həcm."
+  },
+  "common": {
+    "sendRequest": "Sorğu Göndər",
+    "whatsapp": "WhatsApp",
+    "whatsappDirect": "WhatsApp ilə Birbaşa",
+    "whatsappPrefill": "Salam, mən Çindən məhsul tədarük etmək istəyirəm.",
+    "finalTitle": "Nəyə ehtiyacınız olduğunu bildirin.",
+    "finalText": "24 saat ərzində cavab veririk.",
+    "readyEyebrow": "Başlamağa hazırsınız?"
+  },
+  "ai": {
+    "title": "Çin Tədarük Assistanı",
+    "status": "Onlayn · Dərhal cavab verir",
+    "close": "Bağla",
+    "placeholder": "Məhsul, OEM və ya çatdırılma haqqında soruşun...",
+    "imageUpload": "Məhsul şəkli yükləyin",
+    "voiceInput": "Səsli giriş tezliklə",
+    "send": "Mesaj göndər",
+    "consent": "Mesajlar tədarük sorğunuzu emal etmək üçün saxlanıla bilər.",
+    "quickActions": {
+      "heading": "Bu gün sizə necə kömək edə bilərəm?",
+      "source": "Məhsul axtarın",
+      "sourceText": "Çindən məhsul tapılmasında kömək lazımdır",
+      "oem": "OEM / Öz Markam",
+      "oemText": "Öz loqom və qablaşdırmamla OEM istehsalına ehtiyacım var",
+      "verify": "Təchizatçı yoxla",
+      "verifyText": "1688-də Çin təchizatçısını yoxlamaqda kömək lazımdır",
+      "ask": "Sual ver"
+    },
+    "whatsappCta": {
+      "ready": "Tədarük sorğusu hazırdır",
+      "button": "WhatsApp-da davam et →",
+      "note": "Sorğu məlumatlarınız avtomatik əlavə ediləcək."
+    },
+    "whatsappPrefill": {
+      "intro": "Salam, mən Çindən məhsul tədarük etmək istəyirəm.",
+      "leadCode": "Lead kodu",
+      "product": "Məhsul",
+      "quantity": "Miqdar",
+      "destination": "Çatdırılma ölkəsi",
+      "oem": "OEM",
+      "notes": "Qeydlər"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "AI ilə gücləndirilmiş tədarük platforması",
+      "title": "Çindən topdansatış məhsul tədarükünü AI ilə daha asan idarə edin.",
+      "subtitle": "Məhsul şəklini yükləyin, link göndərin və ya nə lazım olduğunu yazın. AI sorğunuzu hazırlayır, komandamız isə fabrikləri yoxlayır, qiymətləri müqayisə edir, keyfiyyətə nəzarət edir və çatdırılmanı təşkil edir.",
+      "primaryCta": "AI ilə Başlayın",
+      "secondaryCta": "Pulsuz Təklif İstəyin",
+      "imageAlt": "Çin lojistika anbarı və ixrac konteynerləri",
+      "trustItems": [
+        "500+ Yoxlanılmış Fabrik",
+        "8 İl Çin Təcrübəsi",
+        "40+ Ölkə"
+      ],
+      "dashCard": {
+        "requestLabel": "Məhsul Sorğusu",
+        "qty": "Miqdar",
+        "dest": "Çatdırılma",
+        "oem": "OEM",
+        "activeStatus": "Aktiv",
+        "suppliersLabel": "Təchizatçılar",
+        "moq": "MOQ",
+        "verifiedBadge": "Yoxlanılıb",
+        "checkingBadge": "Yoxlanılır",
+        "inspectionLabel": "Yoxlama",
+        "licenseCheck": "Fabrik lisenziyası",
+        "sampleCheck": "Nümunə yoxlaması",
+        "packagingCheck": "Qablaşdırma",
+        "preShipment": "Göndərmə öncəsi",
+        "pendingBadge": "Gözlənilir",
+        "routeLabel": "Ticarət Marşrutu",
+        "aiLeadLabel": "Lead kodu",
+        "whatsappReady": "WhatsApp üçün hazır"
+      }
+    },
+    "trust": {
+      "stats": [
+        [
+          "8",
+          "İl Çin Təcrübəsi"
+        ],
+        [
+          "500+",
+          "Doğrulanmış Fabrik"
+        ],
+        [
+          "40+",
+          "Xidmət Olunan Ölkə"
+        ],
+        [
+          "120+",
+          "Məhsul Kateqoriyası"
+        ],
+        [
+          "5",
+          "Danışılan Dil"
+        ]
+      ]
+    },
+    "audience": {
+      "label": "Kimlərlə işləyirik:",
+      "items": [
+        {
+          "label": "Topdansatışçılar",
+          "href": "/quote"
+        },
+        {
+          "label": "OEM Markalar",
+          "href": "/services/oem-private-label"
+        },
+        {
+          "label": "Amazon Satıcıları",
+          "href": "/quote"
+        },
+        {
+          "label": "İlk Dəfə İdxalatçılar",
+          "href": "/how-it-works"
+        },
+        {
+          "label": "Regional Alıcılar",
+          "href": "/#regional"
+        },
+        {
+          "label": "Korporativ Satınalma",
+          "href": "/quote"
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "Çin tədarükü niyə uğursuz olur",
+      "title": "Çindən almaq problem deyil. Yanlış adamlardan almaq problemdir.",
+      "items": [
+        [
+          "Saxta fabriklar",
+          "Alibaba-da minlərlə ticarət şirkəti özünü istehsalçı kimi göstərir."
+        ],
+        [
+          "Depozitdən sonra qiymət dəyişikliyi",
+          "Qiymətləndirilən qiymət ilə faturlandırılan qiymət nadir hallarda eyni olur."
+        ],
+        [
+          "Tərcümə itkisi",
+          "Əsas məhsul terminləri və keyfiyyət standartları yerli nümayəndə olmadan itir."
+        ],
+        [
+          "Mallar gəlişdə xarab çıxır",
+          "Məhsullar fotolarda düzgün görünür. Problemlər gömrükdən sonra ortaya çıxır."
+        ],
+        [
+          "Gizli xərclər",
+          "Çatdırılma, gömrük, yoxlama və qablaşdırma xərcləri ilk təklifdə nadir hallarda göstərilir."
+        ],
+        [
+          "İstehsal izlənməsi yoxdur",
+          "Sifarişlər göndərişə qədər heç bir xəbər olmadan istehsala gedir."
+        ]
+      ]
+    },
+    "process": {
+      "eyebrow": "Proses",
+      "title": "8 addım. Tam şəffaflıq.",
+      "cta": "Tam prosesi görün →",
+      "items": [
+        [
+          "Məhsul məlumatlarını göndərin",
+          "Məhsul spesifikasiyalarını, şəkilləri, miqdarı, hədəf qiyməti və çatdırılma yerini paylaşın."
+        ],
+        [
+          "Doğrulanmış fabrikləri axtarırıq",
+          "İstehsal edib ixrac edə bilən təchizatçıları müqayisə edirik."
+        ],
+        [
+          "Təchizatçı müqayisəsi sizə çatdırılır",
+          "Qiymətlər, şərtlər və risklər aydın göstərilmiş variantlar alırsınız."
+        ],
+        [
+          "Zavod yoxlaması",
+          "Ödənişdən əvvəl lisenziya, güc, yer və etibarlılığı yoxlayırıq."
+        ],
+        [
+          "Nümunə tənzimlənməsi",
+          "Nümunələri, qablaşdırmanı və lazımi dəyişiklikləri koordinasiya edirik."
+        ],
+        [
+          "İstehsal izlənməsi",
+          "İstehsal mərhələlərini və təchizatçı yeniləmələrini izləyirik."
+        ],
+        [
+          "Göndərişdən əvvəl yoxlama",
+          "Məhsulu, kartonu, etiketləməni və sifariş uyğunluğunu yoxlayırıq."
+        ],
+        [
+          "Ölkənizə çatdırılma",
+          "Yükü, gömrük sənədlərini və çatdırılma prosesini tənzimləyirik."
+        ]
+      ]
+    },
+    "tools": {
+      "eyebrow": "Platform alətləri",
+      "title": "Çindən təhlükəsiz məhsul almaq üçün lazım olan hər şey.",
+      "learnMore": "Daha ətraflı →"
+    },
+    "supplierComparison": {
+      "eyebrow": "Təchizatçı müqayisəsi",
+      "title": "Siz bir dollar ödəmədən əvvəl fabrikləri müqayisə edirik.",
+      "note": "Nümunə data. Real müqayisə hesabatları hər müştəriyə şəxsən təqdim edilir."
+    },
+    "services": {
+      "eyebrow": "Xidmətlər",
+      "title": "Təchizatçı axtarışından son göndərişə qədər hər şey.",
+      "learnMore": "Daha ətraflı →",
+      "items": [
+        {
+          "slug": "product-sourcing",
+          "title": "Məhsul Axtarışı",
+          "text": "Məhsulunuza, miqdarınıza, keyfiyyət səviyyənizə və hədəf qiymətinizə uyğun istehsalçıları tapırıq.",
+          "href": "/services/product-sourcing"
+        },
+        {
+          "slug": "factory-verification",
+          "title": "Zavod Yoxlaması",
+          "text": "Ticarət lisenziyalarını, istehsal gücünü, ixrac tarixini və real fabrik kimliyini yoxlayırıq.",
+          "href": "/services/factory-verification"
+        },
+        {
+          "slug": "price-negotiation",
+          "title": "Qiymət Danışığı",
+          "text": "Razılığa gəlməzdən əvvəl ödəniş şərtlərini, istehsal vaxtını, qablaşdırmanı və çatdırılma xərclərini müzakirə edirik.",
+          "href": "/services/product-sourcing"
+        },
+        {
+          "slug": "oem-private-label",
+          "title": "OEM / Özəl Marka",
+          "text": "Markalı məhsullar üçün loqo, qablaşdırma, qəlib, nümunə və təchizatçı ilə kommunikasiya koordinasiya edirik.",
+          "href": "/services/oem-private-label"
+        },
+        {
+          "slug": "quality-inspection",
+          "title": "Keyfiyyət Yoxlaması",
+          "text": "Göndərişdən əvvəl istehsal detallarını yoxlayırıq ki, problemlər gömrükdən sonra üzə çıxmasın.",
+          "href": "/services/quality-inspection"
+        },
+        {
+          "slug": "shipping",
+          "title": "Konsolidasiya və Çatdırılma",
+          "text": "Təchizatçıları birləşdirir, hava, dəniz, dəmir yolu və ya avtomobil ilə bazarınıza göndəririk.",
+          "href": "/services/shipping"
+        }
+      ]
+    },
+    "aiSearch": {
+      "eyebrow": "AI Məhsul Kəşfi",
+      "title": "Çindən nə lazımdır?",
+      "subtitle": "Məhsul adını yazın, şəkil yükləyin və ya link yapışdırın. AI 3 mesajda sorğunuzu hazırlayır.",
+      "placeholder": "Çindən almaq istədiyiniz məhsulu yazın…",
+      "suggestions": ["Su şüşəsi OEM 500 ədəd", "Elektronik aksesuarlar", "Fərdi qablaşdırma", "Paslanmaz mətbəx ləvazimatları", "Dəri çanta özəl marka"]
+    },
+    "categories": {
+      "eyebrow": "Məhsul kateqoriyaları",
+      "title": "Tələbat yüksək B2B kateqoriyaları üzrə tədarük edirik.",
+      "source": "Bu kateqoriyanı tədarük et →",
+      "items": [
+        {
+          "name": "Elektronika",
+          "slug": "electronics",
+          "image": "/images/service-1.jpg"
+        },
+        {
+          "name": "Ev Məhsulları",
+          "slug": "home-goods",
+          "image": "/images/service-2.jpg"
+        },
+        {
+          "name": "Gözəllik",
+          "slug": "beauty",
+          "image": "/images/service-3.jpg"
+        },
+        {
+          "name": "Moda",
+          "slug": "fashion",
+          "image": "/images/service-4.jpg"
+        },
+        {
+          "name": "Qablaşdırma",
+          "slug": "packaging",
+          "image": "/images/service-5.jpg"
+        },
+        {
+          "name": "Sənaye",
+          "slug": "industrial",
+          "image": "/images/service-6.jpg"
+        },
+        {
+          "name": "Mebel",
+          "slug": "furniture",
+          "image": "/images/service-1.jpg"
+        },
+        {
+          "name": "Oyuncaqlar",
+          "slug": "toys",
+          "image": "/images/service-2.jpg"
+        },
+        {
+          "name": "Avtomobil Hissələri",
+          "slug": "auto-parts",
+          "image": "/images/service-3.jpg"
+        },
+        {
+          "name": "Tibbi Ləvazimat",
+          "slug": "medical-supplies",
+          "image": "/images/service-4.jpg"
+        },
+        {
+          "name": "İdman Malları",
+          "slug": "sports-goods",
+          "image": "/images/service-5.jpg"
+        },
+        {
+          "name": "Pet Məhsulları",
+          "slug": "pet-products",
+          "image": "/images/service-6.jpg"
+        }
+      ]
+    },
+    "quality": {
+      "eyebrow": "Keyfiyyət nəzarəti",
+      "title": "Yoxlama göndəriş Çindən çıxmadan əvvəl baş verir.",
+      "cta": "Tam yoxlama prosesini görün →",
+      "imageAlt": "Keyfiyyət yoxlama hesabatının önizləməsi",
+      "imageAltSecondary": "Məhsul qablaşdırma yoxlamasının önizləməsi",
+      "stages": [
+        [
+          "Spesifikasiya təsdiqi",
+          "Təchizatçı seçimindən əvvəl məhsul tələblərini müəyyənləşdiririk."
+        ],
+        [
+          "Nümunə yoxlaması",
+          "Materialları, rəngi, qablaşdırmanı və bitirmə keyfiyyətini yoxlayırıq."
+        ],
+        [
+          "İstehsal yoxlaması",
+          "Sifariş istehsal olunarkən vəziyyəti izləyirik."
+        ],
+        [
+          "Foto və video hesabat",
+          "Göndərişdən əvvəl nəyin hazır olduğunu görürsünüz."
+        ],
+        [
+          "Karton və etiket yoxlaması",
+          "İxrac işarələrini və qablaşdırma detallarını yoxlayırıq."
+        ],
+        [
+          "Son buraxılış",
+          "Mallar yalnız təsdiqləndikdən sonra hərəkət edir."
+        ]
+      ]
+    },
+    "regional": {
+      "eyebrow": "Hara göndəririk",
+      "title": "Biz digər sourcing agentlərinin çoxunun bilmədiyi ticarət marşrutlarını yaxşı tanıyırıq.",
+      "text": "Əksər tədarük şirkətləri ABŞ və AB alıcılarına fokuslanır. Biz Azərbaycan, Türkiyə, Rusiya, MDB və Yaxın Şərq ticarət dəhlizləri üçün qurulmuşuq.",
+      "mapLabel": "Guangzhou-dan regional təyinatlara animasiya ticarət marşrutları",
+      "countries": [
+        "🇦🇿 Azərbaycan",
+        "🇹🇷 Türkiyə",
+        "🇷🇺 Rusiya",
+        "🇦🇪 BƏƏ",
+        "🇰🇿 Qazaxıstan",
+        "🇩🇪 Almaniya",
+        "🇬🇧 Birləşmiş Krallıq"
+      ],
+      "mapCities": [
+        "Guangzhou",
+        "Bakı",
+        "İstanbul",
+        "Dubay",
+        "Moskva",
+        "Berlin"
+      ]
+    },
+    "caseStudies": {
+      "eyebrow": "Case study-lər",
+      "title": "Real tədarük problemləri, praktiki nəticələr.",
+      "read": "Case study-ni oxuyun →",
+      "items": [
+        {
+          "tag": "Qablaşdırma",
+          "destination": "🇦🇿 Bakı",
+          "title": "Pərakəndə qablaşdırma təchizatçısı depozitdən əvvəl dəyişdirildi",
+          "metrics": [
+            [
+              "18%",
+              "xərc azaldıldı"
+            ],
+            [
+              "12",
+              "gün daha sürətli"
+            ],
+            [
+              "0",
+              "qüsur"
+            ]
+          ],
+          "href": "/case-studies/packaging-baku"
+        },
+        {
+          "tag": "Elektronika",
+          "destination": "🇹🇷 İstanbul",
+          "title": "Zavod yoxlaması saxta istehsalçıdan qorundu",
+          "metrics": [
+            [
+              "3",
+              "fabrik yoxlandı"
+            ],
+            [
+              "1",
+              "təsdiqləndi"
+            ],
+            [
+              "5k",
+              "vahid"
+            ]
+          ],
+          "href": "/case-studies/electronics-istanbul"
+        },
+        {
+          "tag": "OEM",
+          "destination": "🇦🇪 Dubay",
+          "title": "Özəl marka nümunəsi istehsaldan əvvəl düzəldildi",
+          "metrics": [
+            [
+              "4",
+              "nümunə turu"
+            ],
+            [
+              "21",
+              "gün"
+            ],
+            [
+              "2",
+              "təchizatçı"
+            ]
+          ],
+          "href": "/case-studies/oem-dubai"
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Niyə biz",
+      "title": "Nəzarətə ehtiyacı olan idxalatçılar üçün qurulmuşdur.",
+      "text": "Ticarət məqsədləriniz ilə fabrik mərtəbəsi arasında işləyirik: tədarük, danışıq, yoxlama, müayinə və çatdırılma bir bütöv proses kimi idarə olunur."
+    },
+    "faq": {
+      "eyebrow": "Tez-tez verilən suallar",
+      "title": "Tədarüka başlamadan əvvəl ümumi suallar.",
+      "items": [
+        {
+          "question": "İstənilən məhsul üçün fabrik tapa bilərsinizmi?",
+          "answer": "Əksər qanuni B2B məhsul kateqoriyaları üzrə işləyirik və məhsul əhatəmiz xaricindədirsə bunu sizə tez bildirərik."
+        },
+        {
+          "question": "Axtarışdan əvvəl ödəniş etməliyəmmi?",
+          "answer": "Təklif sorğusu ilə başlaya bilərsiniz. Ödənişli iş yalnız əhatə dairəsi razılaşdırıldıqdan sonra başlayır."
+        },
+        {
+          "question": "Göndərişdən əvvəl malları yoxlaya bilərsinizmi?",
+          "answer": "Bəli. Foto və video hesabat ilə göndərişdən əvvəl yoxlama təşkil edə bilərik."
+        },
+        {
+          "question": "OEM qablaşdırmasını dəstəkləyirsinizmi?",
+          "answer": "Bəli. Loqo, karton, etiket, insert və təchizatçı tələblərini koordinasiya edirik."
+        },
+        {
+          "question": "Azərbaycana və Türkiyəyə göndərə bilərsinizmi?",
+          "answer": "Bəli. Bu ticarət dəhlizləri bizim əsas bazarlarımızdır."
+        },
+        {
+          "question": "Kiçik miqdarlarla işləyirsinizmi?",
+          "answer": "Fabrikler miqdarı qəbul etdikdə nümunə və sınaq sifarişlərini dəstəkləyə bilərik."
+        },
+        {
+          "question": "Öz təchizatçımdan istifadə edə bilərəmmi?",
+          "answer": "Bəli. Mövcud təchizatçınızdan yoxlama, müayinə, konsolidasiya və ya göndərmə işlərini həyata keçirə bilərik."
+        },
+        {
+          "question": "Nə qədər sürətli cavab verirsiniz?",
+          "answer": "Təklif sorğuları üçün dörd iş saatı ərzində cavab veririk."
+        },
+        {
+          "question": "Gömrük işlərini həll edirsinizmi?",
+          "answer": "Çatdırılma yerinə görə ixrac sənədlərini və yerli idxal tərəfdaşlarını koordinasiya edirik."
+        }
+      ]
+    },
+    "final": {
+      "title": "Məhsulunuzu bizə göndərin. 4 saat ərzində cavab veririk.",
+      "text": "Məhsulu, miqdarı və çatdırılma yerini bildirin. Bir iş günü ərzində təchizatçı variantları olan tədarük planı göndərəcəyik. Ödəniş tələb olunmur.",
+      "primaryCta": "Pulsuz Təklif İstəyin",
+      "secondaryCta": "WhatsApp ilə Birbaşa",
+      "note": "Heç bir öhdəlik yoxdur. Başlamaq üçün ödəniş tələb olunmur."
+    },
+    "whySectionEyebrow": "Niyə Silk Road",
+    "processHeading": "Sadə. Şəffaf. Etibarlı.",
+    "heroServicesBtn": "Xidmətlərimiz",
+    "value": "Sizi düzgün fabrikə düzgün qiymətlə bağlayırıq."
+  },
+  "services": {
+    "heroEyebrow": "Nə edirik",
+    "sidebarLabel": "Xidmətlər",
+    "heroTitle": "Tam xidmətli Çin idxal idarəetməsi.",
+    "heroText": "Təchizatçı axtarışından son çatdırılmaya qədər yolu aydın yoxlama nöqtələri ilə idarə edirik.",
+    "detailFallback": "Xidmət",
+    "quoteCta": "Təklif istəyin",
+    "items": [
+      {
+        "slug": "product-sourcing",
+        "title": "Məhsul Axtarışı",
+        "text": "Məhsulunuza, miqdarınıza, keyfiyyət səviyyənizə və hədəf qiymətinizə uyğun istehsalçıları tapırıq.",
+        "href": "/services/product-sourcing"
+      },
+      {
+        "slug": "factory-verification",
+        "title": "Zavod Yoxlaması",
+        "text": "Ticarət lisenziyalarını, istehsal gücünü, ixrac tarixini və real fabrik kimliyini yoxlayırıq.",
+        "href": "/services/factory-verification"
+      },
+      {
+        "slug": "price-negotiation",
+        "title": "Qiymət Danışığı",
+        "text": "Razılığa gəlməzdən əvvəl ödəniş şərtlərini, istehsal vaxtını, qablaşdırmanı və çatdırılma xərclərini müzakirə edirik.",
+        "href": "/services/product-sourcing"
+      },
+      {
+        "slug": "oem-private-label",
+        "title": "OEM / Özəl Marka",
+        "text": "Markalı məhsullar üçün loqo, qablaşdırma, qəlib, nümunə və təchizatçı kommunikasiyasını koordinasiya edirik.",
+        "href": "/services/oem-private-label"
+      },
+      {
+        "slug": "quality-inspection",
+        "title": "Keyfiyyət Yoxlaması",
+        "text": "Göndərişdən əvvəl istehsal detallarını yoxlayırıq ki, problemlər gömrükdən sonra üzə çıxmasın.",
+        "href": "/services/quality-inspection"
+      },
+      {
+        "slug": "shipping",
+        "title": "Konsolidasiya və Çatdırılma",
+        "text": "Təchizatçıları birləşdirir, hava, dəniz, dəmir yolu və ya avtomobil ilə bazarınıza yük göndəririk.",
+        "href": "/services/shipping"
+      },
+      {
+        "slug": "consolidation",
+        "title": "Konsolidasiya",
+        "text": "Birdən çox təchizatçıdan sifarişləri birləşdirir, kartonları yoxlayır və ixrac üçün göndərişlər hazırlayırıq.",
+        "href": "/services/consolidation"
+      }
+    ],
+    "sections": [
+      [
+        "01 → MƏHSUL AXTARIŞI",
+        "Məhsul Axtarışı",
+        "Məhsulunuza, miqdarınıza, keyfiyyət səviyyənizə və hədəf qiymətinizə uyğun istehsalçıları tapırıq.",
+        [
+          "Fabrik axtarışı",
+          "Təchizatçı yoxlaması",
+          "Aydın hesabat",
+          "İxrac koordinasiyası"
+        ]
+      ],
+      [
+        "02 → ZAVOD YOXLAMASI",
+        "Zavod Yoxlaması",
+        "Ticarət lisenziyalarını, istehsal gücünü, ixrac tarixini və real fabrik kimliyini yoxlayırıq.",
+        [
+          "Ticarət lisenziyası yoxlaması",
+          "Güc qiymətləndirilməsi",
+          "İxrac tarixinin nəzərdən keçirilməsi",
+          "Yerli təsdiq"
+        ]
+      ],
+      [
+        "03 → QİYMƏT DANIŞIĞI",
+        "Qiymət Danışığı",
+        "Razılığa gəlməzdən əvvəl ödəniş şərtlərini, istehsal vaxtını, qablaşdırmanı və çatdırılma xərclərini müzakirə edirik.",
+        [
+          "Qiymət müqayisəsi",
+          "Ödəniş şərtləri",
+          "MOQ danışığı",
+          "Ümumi xərc analizi"
+        ]
+      ],
+      [
+        "04 → OEM / ÖZƏL MARKA",
+        "OEM / Özəl Marka",
+        "Markalı məhsullar üçün loqo, qablaşdırma, qəlib, nümunə və təchizatçı kommunikasiyasını koordinasiya edirik.",
+        [
+          "Loqo və brending",
+          "Qablaşdırma dizaynı",
+          "Nümunə koordinasiyası",
+          "Qəlib istehsalı"
+        ]
+      ],
+      [
+        "05 → KEYFİYYƏT YOXLAMASI",
+        "Keyfiyyət Yoxlaması",
+        "Göndərişdən əvvəl istehsal detallarını yoxlayırıq ki, problemlər gömrükdən sonra üzə çıxmasın.",
+        [
+          "Göndərişdən əvvəl yoxlamalar",
+          "Foto və video hesabat",
+          "Qüsur təsnifatı",
+          "Buraxılış təsdiqi"
+        ]
+      ],
+      [
+        "06 → KONSOLİDASİYA VƏ ÇATDIRILMA",
+        "Konsolidasiya və Çatdırılma",
+        "Təchizatçıları birləşdirir, hava, dəniz, dəmir yolu və ya avtomobil ilə bazarınıza yük göndəririk.",
+        [
+          "Çox təchizatçılı birləşmə",
+          "Gömrük sənədləri",
+          "Yük rezervasiyası",
+          "Çatdırılma izlənməsi"
+        ]
+      ]
+    ]
+  },
+  "categories": {
+    "title": "Məhsul Kateqoriyaları",
+    "text": "Kontekstlə tədarük sorğusu başlatmaq üçün bir kateqoriya seçin.",
+    "eyebrow": "Kateqoriya",
+    "detailText": "Spesifikasiyalarınızı bizə göndərin, fabrik variantlarını, MOQ, qablaşdırma və çatdırılma yolunu xəritələşdirəcəyik.",
+    "quoteCta": "Təklif istəyin"
+  },
+  "process": {
+    "heroEyebrow": "Necə işləyir",
+    "heroTitle": "Səkkiz addım. Heç bir sürpriz yoxdur.",
+    "steps": [
+      [
+        "Məhsul məlumatlarını göndərin",
+        "Məhsul spesifikasiyalarını, şəkilləri, miqdarı, hədəf qiyməti və çatdırılma yerini paylaşın."
+      ],
+      [
+        "Doğrulanmış fabrikləri axtarırıq",
+        "İstehsal edib ixrac edə bilən təchizatçıları müqayisə edirik."
+      ],
+      [
+        "Təchizatçı müqayisəsi sizə çatdırılır",
+        "Qiymətlər, şərtlər və risklər aydın göstərilmiş variantlar alırsınız."
+      ],
+      [
+        "Zavod yoxlaması",
+        "Ödənişdən əvvəl lisenziya, güc, yer və etibarlılığı yoxlayırıq."
+      ],
+      [
+        "Nümunə tənzimlənməsi",
+        "Nümunələri, qablaşdırmanı və lazımi dəyişiklikləri koordinasiya edirik."
+      ],
+      [
+        "İstehsal izlənməsi",
+        "İstehsal mərhələlərini və təchizatçı yeniləmələrini izləyirik."
+      ],
+      [
+        "Göndərişdən əvvəl yoxlama",
+        "Məhsulu, kartonu, etiketləməni və sifariş uyğunluğunu yoxlayırıq."
+      ],
+      [
+        "Ölkənizə çatdırılma",
+        "Yükü, gömrük sənədlərini və çatdırılma prosesini tənzimləyirik."
+      ]
+    ]
+  },
+  "quality": {
+    "title": "Keyfiyyət Yoxlaması"
+  },
+  "oem": {
+    "title": "OEM / Özəl Marka"
+  },
+  "shipping": {
+    "title": "Çatdırılma"
+  },
+  "regional": {
+    "title": "Regional marşrutlar"
+  },
+  "whyUs": {
+    "title": "Niyə Silk Road"
+  },
+  "caseStudies": {
+    "title": "Case Study-lər",
+    "eyebrow": "Case study",
+    "detailText": "Bu case study tədarük problemini, prosesi və nəticəni ümumiləşdirir."
+  },
+  "faq": {
+    "title": "Tez-tez verilən suallar"
+  },
+  "quote": {
+    "eyebrow": "Təklif sorğusu",
+    "title": "Tədarük təklifi istəyin.",
+    "text": "Fabrikləri, qiymətləri, nümunələri və çatdırılmanı qiymətləndirmək üçün üç addımı tamamlayın.",
+    "stepLabel": "{step}-ci addım / 3",
+    "productName": "Məhsulun adı",
+    "category": "Kateqoriya",
+    "quantity": "Miqdar",
+    "targetPrice": "Hədəf qiymət",
+    "referenceUrl": "Referans URL",
+    "files": "Məhsul şəkilləri və ya fayllar",
+    "destinationCountry": "Çatdırılma ölkəsi",
+    "oemRequired": "OEM tələb olunur",
+    "customPackaging": "Xüsusi qablaşdırma",
+    "shippingPreference": "Çatdırılma üstünlüyü",
+    "sampleNeeded": "Nümunə lazımdır",
+    "notes": "Qeydlər",
+    "name": "Ad",
+    "company": "Şirkət",
+    "email": "Email",
+    "whatsappField": "WhatsApp",
+    "wechat": "WeChat",
+    "source": "Bizi necə tapdınız?",
+    "back": "Geri",
+    "next": "İrəli",
+    "submit": "Təklif sorğusunu göndər",
+    "sending": "Göndərilir…",
+    "error": "Xəta baş verdi. Birbaşa WhatsApp və ya email ilə əlaqə saxlayın.",
+    "successTitle": "Təklif sorğusu qəbul edildi.",
+    "successText": "Detalları nəzərdən keçirəcəyik və növbəti addımlarla cavab verəcəyik.",
+    "whatsapp": "WhatsApp-da davam et",
+    "validation": {
+      "productRequired": "Məhsulun adı tələb olunur",
+      "quantityRequired": "Miqdar tələb olunur",
+      "destinationRequired": "Zəhmət olmasa çatdırılma ölkəsini seçin",
+      "emailInvalid": "Zəhmət olmasa etibarlı email ünvanı daxil edin",
+      "nameRequired": "Ad tələb olunur",
+      "contactRequired": "Email və ya WhatsApp tələb olunur"
+    },
+    "categories": [
+      {
+        "value": "electronics",
+        "label": "Elektronika"
+      },
+      {
+        "value": "home",
+        "label": "Ev məhsulları"
+      },
+      {
+        "value": "beauty",
+        "label": "Gözəllik"
+      },
+      {
+        "value": "fashion",
+        "label": "Moda"
+      },
+      {
+        "value": "packaging",
+        "label": "Qablaşdırma"
+      },
+      {
+        "value": "industrial",
+        "label": "Sənaye"
+      },
+      {
+        "value": "furniture",
+        "label": "Mebel"
+      },
+      {
+        "value": "toys",
+        "label": "Oyuncaqlar"
+      },
+      {
+        "value": "auto",
+        "label": "Avtomobil hissələri"
+      },
+      {
+        "value": "medical",
+        "label": "Tibbi ləvazimat"
+      },
+      {
+        "value": "sports",
+        "label": "İdman malları"
+      },
+      {
+        "value": "other",
+        "label": "Digər"
+      }
+    ],
+    "countries": [
+      {
+        "value": "azerbaijan",
+        "label": "Azərbaycan"
+      },
+      {
+        "value": "turkey",
+        "label": "Türkiyə"
+      },
+      {
+        "value": "russia",
+        "label": "Rusiya"
+      },
+      {
+        "value": "uae",
+        "label": "BƏƏ"
+      },
+      {
+        "value": "kazakhstan",
+        "label": "Qazaxıstan"
+      },
+      {
+        "value": "germany",
+        "label": "Almaniya"
+      },
+      {
+        "value": "uk",
+        "label": "Birləşmiş Krallıq"
+      },
+      {
+        "value": "other",
+        "label": "Digər"
+      }
+    ],
+    "shipping": [
+      {
+        "value": "air",
+        "label": "Hava"
+      },
+      {
+        "value": "sea",
+        "label": "Dəniz"
+      },
+      {
+        "value": "rail",
+        "label": "Dəmir yolu"
+      },
+      {
+        "value": "truck",
+        "label": "Avtomobil"
+      },
+      {
+        "value": "not-sure",
+        "label": "Əmin deyiləm"
+      }
+    ],
+    "sources": [
+      {
+        "value": "",
+        "label": "Seçin"
+      },
+      {
+        "value": "google",
+        "label": "Google"
+      },
+      {
+        "value": "linkedin",
+        "label": "LinkedIn"
+      },
+      {
+        "value": "referral",
+        "label": "Tövsiyə"
+      },
+      {
+        "value": "instagram",
+        "label": "Instagram"
+      },
+      {
+        "value": "other",
+        "label": "Digər"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Bizimlə əlaqə",
+    "title": "Sorğunuzu göndərin.",
+    "text": "Başlamaq üçün məhsul, miqdar, hədəf qiymət və vaxt çərçivəsi kifayətdir.",
+    "name": "Ad",
+    "contact": "Email və ya WhatsApp",
+    "need": "Nəyə ehtiyacınız var?",
+    "budget": "Büdcə aralığı",
+    "optional": "İstəyə görə",
+    "placeholderContact": "your@email.com və ya +994…",
+    "placeholderNeed": "Məhsul, miqdar, hədəf qiymət",
+    "submit": "Sorğu göndər",
+    "sending": "Göndərilir…",
+    "error": "Xəta baş verdi. Birbaşa WhatsApp və ya email ilə əlaqə saxlayın.",
+    "successTitle": "Sorğu qəbul edildi. Emailinizi yoxlayın.",
+    "successText": "Detalları nəzərdən keçirəcəyik və 24 saat ərzində cavab verəcəyik.",
+    "direct": "Birbaşa əlaqə",
+    "response": "24 saat ərzində cavab veririk.",
+    "scanPrompt": "WhatsApp-da dərhal əlaqə üçün skan edin.",
+    "continueWhatsapp": "WhatsApp-da davam et →",
+    "whatsappLabel": "WhatsApp",
+    "validation": {
+      "nameRequired": "Ad tələb olunur",
+      "contactRequired": "Email və ya WhatsApp tələb olunur",
+      "needRequired": "Zəhmət olmasa nəyə ehtiyacınız olduğunu izah edin",
+      "messageTooShort": "Mesaj çox qısadır"
+    }
+  },
+  "about": {
+    "eyebrow": "Təsisçi",
+    "name": "Sarkhan Hüseynov",
+    "intro": "Silk Road, qiymət, keyfiyyət və çatdırılma üzərindəki nəzarəti itirmədən Çindən almaq üçün birbaşa yola ehtiyacı olan idxalatçılar üçün qurulmuşdur.",
+    "storyEyebrow": "Tariximiz",
+    "storyTitle": "Niyə Silk Road",
+    "story": [
+      "Kiçik detallar gec həll edildikdə beynəlxalq ticarət bahalıya başa gəlir.",
+      "İş praktikdir: düzgün fabrik tapın, real xərci müəyyənləşdirin, sifarişi qoruyun və təmiz çatdırın."
+    ],
+    "valuesEyebrow": "Dəyərlərimiz",
+    "valuesHeading": "Necə işləyirik.",
+    "values": [
+      [
+        "Etibar",
+        "Aydın şərtlər, aydın yeniləmələr, gizli heç nə yoxdur."
+      ],
+      [
+        "Sürət",
+        "Diqqətsiz qısayollar olmadan sürətli təchizatçı yoxlamaları."
+      ],
+      [
+        "Qiymət",
+        "Ümumi çatdırılma xərcinə fokuslanmış danışıq."
+      ]
+    ],
+    "strip": {
+      "email": "hello@sarkhan.com",
+      "whatsapp": "+994 50 123 45 67",
+      "address": "Bakı, Azərbaycan"
+    }
+  },
+  "blog": {
+    "title": "Bloq",
+    "eyebrow": "Məqalə",
+    "detailText": "Tədarük, təchizatçı yoxlaması, müayinə və ixrac marşrutları haqqında fikirlər.",
+    "posts": [
+      {
+        "slug": "china-sourcing-checklist",
+        "title": "Çin tədarük yoxlama siyahısı",
+        "excerpt": "Təchizatçıya ödəmədən əvvəl nəyi təsdiq etmək lazımdır."
+      },
+      {
+        "slug": "factory-verification-guide",
+        "title": "Zavod yoxlama bələdçisi",
+        "excerpt": "Fabrikləri ticarət şirkətlərindən necə ayırd etmək olar."
+      },
+      {
+        "slug": "shipping-from-china",
+        "title": "Çindən çatdırılma",
+        "excerpt": "Hava, dəniz, dəmir yolu və ya avtomobil yükünü necə seçmək olar."
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Məxfilik Siyasəti",
+    "text": "Bu səhifə tezliklə hazır olacaq."
+  },
+  "termsPage": {
+    "title": "İstifadə Şərtləri",
+    "text": "Bu səhifə tezliklə hazır olacaq."
+  }
+}

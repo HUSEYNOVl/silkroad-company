@@ -1,0 +1,1032 @@
+{
+  "meta": {
+    "title": "Silk Road | China Sourcing & Export Partner",
+    "description": "Premium China sourcing, factory verification, quality inspection, OEM production, and export handling for serious importers."
+  },
+  "nav": {
+    "brand": "Silk Road",
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "process": "Process",
+    "categories": "Categories",
+    "about": "About",
+    "blog": "Blog",
+    "quote": "Quote",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "primaryNav": "Primary navigation",
+    "quoteCta": "Request a Quote",
+    "aiAssistant": "AI Assistant",
+    "servicesMenu": [
+      {
+        "href": "/services/product-sourcing",
+        "title": "Product Sourcing",
+        "text": "Find the right factories for your product."
+      },
+      {
+        "href": "/services/factory-verification",
+        "title": "Factory Verification",
+        "text": "Confirm factory identity, capacity, and credibility."
+      },
+      {
+        "href": "/services/oem-private-label",
+        "title": "OEM / Private Label",
+        "text": "Coordinate branding, packaging, and samples."
+      },
+      {
+        "href": "/services/quality-inspection",
+        "title": "Quality Inspection",
+        "text": "Inspect goods before they leave China."
+      },
+      {
+        "href": "/services/consolidation",
+        "title": "Consolidation",
+        "text": "Combine multiple suppliers into one shipment."
+      },
+      {
+        "href": "/services/shipping",
+        "title": "Shipping",
+        "text": "Move cargo by air, sea, rail, or truck."
+      }
+    ]
+  },
+  "footer": {
+    "mark": "Silk Road",
+    "company": "Company",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "legal": "Legal",
+    "sourcing": "Sourcing",
+    "shipping": "Shipping",
+    "customs": "Customs",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "email": "hello@sarkhan.com",
+    "emailLabel": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Baku, Azerbaijan",
+    "copyright": "© 2026 Silk Road. Founded by Sarkhan Huseynov, Baku.",
+    "description": "Full-service import handling from China to your door. Any product, any volume."
+  },
+  "common": {
+    "sendRequest": "Send Request",
+    "whatsapp": "WhatsApp",
+    "whatsappDirect": "WhatsApp Direct",
+    "whatsappPrefill": "Hi, I want to source a product from China.",
+    "finalTitle": "Tell us what you need.",
+    "finalText": "We reply within 24 hours.",
+    "readyEyebrow": "Ready to start?"
+  },
+  "ai": {
+    "title": "China Sourcing Assistant",
+    "status": "Online · Replies instantly",
+    "close": "Close",
+    "placeholder": "Ask about products, OEM, or shipping...",
+    "imageUpload": "Upload product photo",
+    "voiceInput": "Voice input coming soon",
+    "send": "Send message",
+    "consent": "Messages may be saved to process your sourcing request.",
+    "quickActions": {
+      "heading": "How can I help you today?",
+      "source": "Source a product",
+      "sourceText": "I need help sourcing a product from China",
+      "oem": "OEM / My Logo",
+      "oemText": "I need OEM production with my own logo and packaging",
+      "verify": "Verify supplier",
+      "verifyText": "I need help verifying a Chinese supplier on 1688",
+      "ask": "Ask a question"
+    },
+    "whatsappCta": {
+      "ready": "Sourcing request ready",
+      "button": "Continue on WhatsApp →",
+      "note": "Your request details will be included automatically."
+    },
+    "whatsappPrefill": {
+      "intro": "Hi, I want to source a product from China.",
+      "leadCode": "Lead Code",
+      "product": "Product",
+      "quantity": "Quantity",
+      "destination": "Destination",
+      "oem": "OEM",
+      "notes": "Notes"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "AI-powered sourcing platform",
+      "title": "Source Wholesale Products from China with AI",
+      "subtitle": "Upload a product photo, paste a link, or describe what you need. Our AI creates a sourcing request — then our team verifies factories, compares prices, checks quality, and arranges shipping.",
+      "primaryCta": "Start with AI Assistant",
+      "secondaryCta": "Request Free Quote",
+      "imageAlt": "China logistics warehouse and export containers",
+      "trustItems": [
+        "500+ Verified Factories",
+        "8 Years in China",
+        "40+ Countries"
+      ],
+      "dashCard": {
+        "requestLabel": "Product Request",
+        "qty": "Qty",
+        "dest": "Destination",
+        "oem": "OEM",
+        "activeStatus": "Active",
+        "suppliersLabel": "Suppliers",
+        "moq": "MOQ",
+        "verifiedBadge": "Verified",
+        "checkingBadge": "Checking",
+        "inspectionLabel": "Inspection",
+        "licenseCheck": "Factory license",
+        "sampleCheck": "Sample review",
+        "packagingCheck": "Packaging",
+        "preShipment": "Pre-shipment",
+        "pendingBadge": "Pending",
+        "routeLabel": "Trade Route",
+        "aiLeadLabel": "Lead code",
+        "whatsappReady": "WhatsApp ready"
+      }
+    },
+    "trust": {
+      "stats": [
+        [
+          "8",
+          "Years in China"
+        ],
+        [
+          "500+",
+          "Verified Factories"
+        ],
+        [
+          "40+",
+          "Countries Served"
+        ],
+        [
+          "120+",
+          "Product Categories"
+        ],
+        [
+          "5",
+          "Languages Spoken"
+        ]
+      ]
+    },
+    "audience": {
+      "label": "We work with:",
+      "items": [
+        {
+          "label": "Wholesalers",
+          "href": "/quote"
+        },
+        {
+          "label": "OEM Brands",
+          "href": "/services/oem-private-label"
+        },
+        {
+          "label": "Amazon Sellers",
+          "href": "/quote"
+        },
+        {
+          "label": "First-Time Importers",
+          "href": "/how-it-works"
+        },
+        {
+          "label": "Regional Buyers",
+          "href": "/#regional"
+        },
+        {
+          "label": "Corporate Procurement",
+          "href": "/quote"
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "Why China sourcing fails",
+      "title": "Buying from China is not the problem. Buying from the wrong people is.",
+      "items": [
+        [
+          "Fake factories",
+          "Thousands of trading companies pose as manufacturers on Alibaba."
+        ],
+        [
+          "Price changes after deposit",
+          "The quoted price and the invoiced price are rarely the same."
+        ],
+        [
+          "Lost in translation",
+          "Key product terms and quality standards get lost without someone on the ground."
+        ],
+        [
+          "Goods fail on arrival",
+          "Products look correct in photos. The problems show up after customs."
+        ],
+        [
+          "Hidden costs",
+          "Shipping, duties, inspection, and packaging costs are rarely included in the first quote."
+        ],
+        [
+          "No production follow-up",
+          "Orders disappear into production with no updates until shipment."
+        ]
+      ]
+    },
+    "process": {
+      "eyebrow": "The process",
+      "title": "8 steps. Full transparency.",
+      "cta": "See the full process →",
+      "items": [
+        [
+          "Send us product details",
+          "Share product specs, photos, quantity, target price, and destination."
+        ],
+        [
+          "We search verified factories",
+          "We compare suppliers that can actually produce and export."
+        ],
+        [
+          "Supplier comparison delivered to you",
+          "You receive options with pricing, terms, and risks clearly shown."
+        ],
+        [
+          "Factory verification",
+          "We check license, capacity, location, and credibility before payment."
+        ],
+        [
+          "Sample arrangement",
+          "We coordinate samples, packaging, and required changes."
+        ],
+        [
+          "Production follow-up",
+          "We track production milestones and supplier updates."
+        ],
+        [
+          "Pre-shipment inspection",
+          "We inspect product, carton, labeling, and order consistency."
+        ],
+        [
+          "Shipping to your country",
+          "We arrange freight, customs documents, and delivery handoff."
+        ]
+      ]
+    },
+    "tools": {
+      "eyebrow": "Platform tools",
+      "title": "Everything you need to source from China safely.",
+      "learnMore": "Learn more →"
+    },
+    "supplierComparison": {
+      "eyebrow": "Supplier comparison",
+      "title": "We compare factories before you commit a single dollar.",
+      "note": "Example data. Real comparison reports are delivered privately to each client."
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "Everything between supplier search and final shipment.",
+      "learnMore": "Learn more →",
+      "items": [
+        {
+          "slug": "product-sourcing",
+          "title": "Product Sourcing",
+          "text": "We find manufacturers that match your product, quantity, quality level, and target price.",
+          "href": "/services/product-sourcing"
+        },
+        {
+          "slug": "factory-verification",
+          "title": "Factory Verification",
+          "text": "We verify business licenses, production capacity, export history, and real factory identity.",
+          "href": "/services/factory-verification"
+        },
+        {
+          "slug": "price-negotiation",
+          "title": "Price Negotiation",
+          "text": "We negotiate payment terms, production timing, packaging, and landed cost before you commit.",
+          "href": "/services/product-sourcing"
+        },
+        {
+          "slug": "oem-private-label",
+          "title": "OEM / Private Label",
+          "text": "We coordinate logo, packaging, molds, samples, and supplier communication for branded products.",
+          "href": "/services/oem-private-label"
+        },
+        {
+          "slug": "quality-inspection",
+          "title": "Quality Inspection",
+          "text": "We inspect production details before shipment so problems do not arrive after customs.",
+          "href": "/services/quality-inspection"
+        },
+        {
+          "slug": "shipping",
+          "title": "Consolidation & Shipping",
+          "text": "We consolidate suppliers and arrange air, sea, rail, or truck freight to your market.",
+          "href": "/services/shipping"
+        }
+      ]
+    },
+    "aiSearch": {
+      "eyebrow": "AI Product Discovery",
+      "title": "What do you need from China?",
+      "subtitle": "Describe a product, upload a photo, or paste a link. Our AI creates your sourcing request in 3 messages.",
+      "placeholder": "Tell us what product you want to source from China…",
+      "suggestions": ["Water bottles OEM 500 pcs", "Electronics accessories", "Custom packaging", "Stainless kitchenware", "Fashion bags private label"]
+    },
+    "categories": {
+      "eyebrow": "Product categories",
+      "title": "We source across high-demand B2B categories.",
+      "source": "Source this →",
+      "items": [
+        {
+          "name": "Electronics",
+          "slug": "electronics",
+          "image": "/images/service-1.jpg"
+        },
+        {
+          "name": "Home Goods",
+          "slug": "home-goods",
+          "image": "/images/service-2.jpg"
+        },
+        {
+          "name": "Beauty",
+          "slug": "beauty",
+          "image": "/images/service-3.jpg"
+        },
+        {
+          "name": "Fashion",
+          "slug": "fashion",
+          "image": "/images/service-4.jpg"
+        },
+        {
+          "name": "Packaging",
+          "slug": "packaging",
+          "image": "/images/service-5.jpg"
+        },
+        {
+          "name": "Industrial",
+          "slug": "industrial",
+          "image": "/images/service-6.jpg"
+        },
+        {
+          "name": "Furniture",
+          "slug": "furniture",
+          "image": "/images/service-1.jpg"
+        },
+        {
+          "name": "Toys",
+          "slug": "toys",
+          "image": "/images/service-2.jpg"
+        },
+        {
+          "name": "Auto Parts",
+          "slug": "auto-parts",
+          "image": "/images/service-3.jpg"
+        },
+        {
+          "name": "Medical Supplies",
+          "slug": "medical-supplies",
+          "image": "/images/service-4.jpg"
+        },
+        {
+          "name": "Sports Goods",
+          "slug": "sports-goods",
+          "image": "/images/service-5.jpg"
+        },
+        {
+          "name": "Pet Products",
+          "slug": "pet-products",
+          "image": "/images/service-6.jpg"
+        }
+      ]
+    },
+    "quality": {
+      "eyebrow": "Quality control",
+      "title": "Inspection happens before the shipment leaves China.",
+      "cta": "See full inspection process →",
+      "imageAlt": "Quality inspection report preview",
+      "imageAltSecondary": "Product packaging inspection preview",
+      "stages": [
+        [
+          "Spec confirmation",
+          "We lock product requirements before supplier selection."
+        ],
+        [
+          "Sample review",
+          "We confirm materials, color, packaging, and finish."
+        ],
+        [
+          "Production check",
+          "We follow status while the order is being produced."
+        ],
+        [
+          "Photo and video report",
+          "You see what is ready before shipment."
+        ],
+        [
+          "Carton and label check",
+          "We verify export marks and packaging details."
+        ],
+        [
+          "Final release",
+          "Goods move only after approval."
+        ]
+      ]
+    },
+    "regional": {
+      "eyebrow": "Where we ship",
+      "title": "We know the routes that most sourcing agents don't.",
+      "text": "Most sourcing companies focus on US and EU buyers. We are built for the Azerbaijan, Turkey, Russia, CIS, and Middle East trade corridors.",
+      "mapLabel": "Animated trade routes from Guangzhou to regional destinations",
+      "countries": [
+        "🇦🇿 Azerbaijan",
+        "🇹🇷 Turkey",
+        "🇷🇺 Russia",
+        "🇦🇪 UAE",
+        "🇰🇿 Kazakhstan",
+        "🇩🇪 Germany",
+        "🇬🇧 United Kingdom"
+      ],
+      "mapCities": [
+        "Guangzhou",
+        "Baku",
+        "Istanbul",
+        "Dubai",
+        "Moscow",
+        "Berlin"
+      ]
+    },
+    "caseStudies": {
+      "eyebrow": "Case studies",
+      "title": "Real sourcing problems, practical results.",
+      "read": "Read case study →",
+      "items": [
+        {
+          "tag": "Packaging",
+          "destination": "🇦🇿 Baku",
+          "title": "Retail packaging supplier replaced before deposit",
+          "metrics": [
+            [
+              "18%",
+              "cost saved"
+            ],
+            [
+              "12",
+              "days faster"
+            ],
+            [
+              "0",
+              "defects"
+            ]
+          ],
+          "href": "/case-studies/packaging-baku"
+        },
+        {
+          "tag": "Electronics",
+          "destination": "🇹🇷 Istanbul",
+          "title": "Factory verification avoided a false manufacturer",
+          "metrics": [
+            [
+              "3",
+              "factories checked"
+            ],
+            [
+              "1",
+              "approved"
+            ],
+            [
+              "5k",
+              "units"
+            ]
+          ],
+          "href": "/case-studies/electronics-istanbul"
+        },
+        {
+          "tag": "OEM",
+          "destination": "🇦🇪 Dubai",
+          "title": "Private label sample corrected before production",
+          "metrics": [
+            [
+              "4",
+              "sample rounds"
+            ],
+            [
+              "21",
+              "days"
+            ],
+            [
+              "2",
+              "suppliers"
+            ]
+          ],
+          "href": "/case-studies/oem-dubai"
+        }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Why us",
+      "title": "Built for importers who need control, not guesswork.",
+      "text": "We work between your commercial goals and the factory floor: sourcing, negotiation, verification, inspection, and shipping are handled as one connected process."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Common questions before you source.",
+      "items": [
+        {
+          "question": "Can you find a factory for any product?",
+          "answer": "We work across most legal B2B product categories and will tell you quickly if a product is outside our scope."
+        },
+        {
+          "question": "Do I pay before you search?",
+          "answer": "You can start with a quote request. Paid work begins only after scope is agreed."
+        },
+        {
+          "question": "Can you inspect goods before shipping?",
+          "answer": "Yes. We can arrange pre-shipment inspection with photo and video reporting."
+        },
+        {
+          "question": "Do you support OEM packaging?",
+          "answer": "Yes. We coordinate logo, cartons, labels, inserts, and supplier requirements."
+        },
+        {
+          "question": "Can you ship to Azerbaijan and Turkey?",
+          "answer": "Yes. These trade corridors are core markets for us."
+        },
+        {
+          "question": "Do you work with small quantities?",
+          "answer": "We can support samples and trial orders when factories accept the quantity."
+        },
+        {
+          "question": "Can I use my own supplier?",
+          "answer": "Yes. We can verify, inspect, consolidate, or ship from your existing supplier."
+        },
+        {
+          "question": "How fast do you reply?",
+          "answer": "We reply within four business hours for quote requests."
+        },
+        {
+          "question": "Do you handle customs?",
+          "answer": "We coordinate export documents and local import partners depending on destination."
+        }
+      ]
+    },
+    "final": {
+      "title": "Send us your product. We reply within 4 hours.",
+      "text": "Tell us the product, quantity, and destination. We will send you a sourcing plan with supplier options within one business day. No payment required.",
+      "primaryCta": "Request a Free Quote",
+      "secondaryCta": "WhatsApp Direct",
+      "note": "No obligation. No payment to start."
+    },
+    "whySectionEyebrow": "Why Silk Road",
+    "processHeading": "Simple. Transparent. Reliable.",
+    "heroServicesBtn": "Our services",
+    "value": "We connect you to the right factory at the right price."
+  },
+  "services": {
+    "heroEyebrow": "What we do",
+    "sidebarLabel": "Services",
+    "heroTitle": "Full-service China import handling.",
+    "heroText": "We manage the path from supplier search to final delivery with clear checkpoints.",
+    "detailFallback": "Service",
+    "quoteCta": "Request a quote",
+    "items": [
+      {
+        "slug": "product-sourcing",
+        "title": "Product Sourcing",
+        "text": "We find manufacturers that match your product, quantity, quality level, and target price.",
+        "href": "/services/product-sourcing"
+      },
+      {
+        "slug": "factory-verification",
+        "title": "Factory Verification",
+        "text": "We verify business licenses, production capacity, export history, and real factory identity.",
+        "href": "/services/factory-verification"
+      },
+      {
+        "slug": "price-negotiation",
+        "title": "Price Negotiation",
+        "text": "We negotiate payment terms, production timing, packaging, and landed cost before you commit.",
+        "href": "/services/product-sourcing"
+      },
+      {
+        "slug": "oem-private-label",
+        "title": "OEM / Private Label",
+        "text": "We coordinate logo, packaging, molds, samples, and supplier communication for branded products.",
+        "href": "/services/oem-private-label"
+      },
+      {
+        "slug": "quality-inspection",
+        "title": "Quality Inspection",
+        "text": "We inspect production details before shipment so problems do not arrive after customs.",
+        "href": "/services/quality-inspection"
+      },
+      {
+        "slug": "shipping",
+        "title": "Consolidation & Shipping",
+        "text": "We consolidate suppliers and arrange air, sea, rail, or truck freight to your market.",
+        "href": "/services/shipping"
+      },
+      {
+        "slug": "consolidation",
+        "title": "Consolidation",
+        "text": "We combine orders from multiple suppliers, check cartons, and prepare shipments for export.",
+        "href": "/services/consolidation"
+      }
+    ],
+    "sections": [
+      [
+        "01 → PRODUCT SOURCING",
+        "Product Sourcing",
+        "We find manufacturers that match your product, quantity, quality level, and target price.",
+        [
+          "Factory search",
+          "Supplier verification",
+          "Clear reporting",
+          "Export coordination"
+        ]
+      ],
+      [
+        "02 → FACTORY VERIFICATION",
+        "Factory Verification",
+        "We verify business licenses, production capacity, export history, and real factory identity.",
+        [
+          "Business license check",
+          "Capacity assessment",
+          "Export history review",
+          "On-site confirmation"
+        ]
+      ],
+      [
+        "03 → PRICE NEGOTIATION",
+        "Price Negotiation",
+        "We negotiate payment terms, production timing, packaging, and landed cost before you commit.",
+        [
+          "Price benchmarking",
+          "Payment terms",
+          "MOQ negotiation",
+          "Total cost analysis"
+        ]
+      ],
+      [
+        "04 → OEM / PRIVATE LABEL",
+        "OEM / Private Label",
+        "We coordinate logo, packaging, molds, samples, and supplier communication for branded products.",
+        [
+          "Logo & branding",
+          "Packaging design",
+          "Sample coordination",
+          "Mold production"
+        ]
+      ],
+      [
+        "05 → QUALITY INSPECTION",
+        "Quality Inspection",
+        "We inspect production details before shipment so problems do not arrive after customs.",
+        [
+          "Pre-shipment checks",
+          "Photo & video report",
+          "Defect classification",
+          "Release approval"
+        ]
+      ],
+      [
+        "06 → CONSOLIDATION & SHIPPING",
+        "Consolidation & Shipping",
+        "We consolidate suppliers and arrange air, sea, rail, or truck freight to your market.",
+        [
+          "Multi-supplier merge",
+          "Customs documents",
+          "Freight booking",
+          "Delivery tracking"
+        ]
+      ]
+    ]
+  },
+  "categories": {
+    "title": "Product Categories",
+    "text": "Select a category to start a sourcing request with context.",
+    "eyebrow": "Category",
+    "detailText": "Send us your specification and we will map the factory options, MOQ, packaging, and shipping path.",
+    "quoteCta": "Request a quote"
+  },
+  "process": {
+    "heroEyebrow": "How it works",
+    "heroTitle": "Eight steps. No surprises.",
+    "steps": [
+      [
+        "Send us product details",
+        "Share product specs, photos, quantity, target price, and destination."
+      ],
+      [
+        "We search verified factories",
+        "We compare suppliers that can actually produce and export."
+      ],
+      [
+        "Supplier comparison delivered to you",
+        "You receive options with pricing, terms, and risks clearly shown."
+      ],
+      [
+        "Factory verification",
+        "We check license, capacity, location, and credibility before payment."
+      ],
+      [
+        "Sample arrangement",
+        "We coordinate samples, packaging, and required changes."
+      ],
+      [
+        "Production follow-up",
+        "We track production milestones and supplier updates."
+      ],
+      [
+        "Pre-shipment inspection",
+        "We inspect product, carton, labeling, and order consistency."
+      ],
+      [
+        "Shipping to your country",
+        "We arrange freight, customs documents, and delivery handoff."
+      ]
+    ]
+  },
+  "quality": {
+    "title": "Quality Inspection"
+  },
+  "oem": {
+    "title": "OEM / Private Label"
+  },
+  "shipping": {
+    "title": "Shipping"
+  },
+  "regional": {
+    "title": "Regional routes"
+  },
+  "whyUs": {
+    "title": "Why Silk Road"
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "eyebrow": "Case study",
+    "detailText": "This case study summarizes the sourcing challenge, process, and result."
+  },
+  "faq": {
+    "title": "FAQ"
+  },
+  "quote": {
+    "eyebrow": "Quote request",
+    "title": "Request a sourcing quote.",
+    "text": "Complete the three steps so we can evaluate factories, pricing, samples, and shipping.",
+    "stepLabel": "Step {step} of 3",
+    "productName": "Product name",
+    "category": "Category",
+    "quantity": "Quantity",
+    "targetPrice": "Target price",
+    "referenceUrl": "Reference URL",
+    "files": "Product photos or files",
+    "destinationCountry": "Destination country",
+    "oemRequired": "OEM required",
+    "customPackaging": "Custom packaging",
+    "shippingPreference": "Shipping preference",
+    "sampleNeeded": "Sample needed",
+    "notes": "Notes",
+    "name": "Name",
+    "company": "Company",
+    "email": "Email",
+    "whatsappField": "WhatsApp",
+    "wechat": "WeChat",
+    "source": "How did you find us?",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit quote request",
+    "sending": "Sending…",
+    "error": "Something went wrong. Please try WhatsApp or email directly.",
+    "successTitle": "Quote request received.",
+    "successText": "We will review the details and reply with next steps.",
+    "whatsapp": "Continue on WhatsApp",
+    "validation": {
+      "productRequired": "Product name is required",
+      "quantityRequired": "Quantity is required",
+      "destinationRequired": "Please select a destination country",
+      "emailInvalid": "Please enter a valid email address",
+      "nameRequired": "Name is required",
+      "contactRequired": "Email or WhatsApp is required"
+    },
+    "categories": [
+      {
+        "value": "electronics",
+        "label": "Electronics"
+      },
+      {
+        "value": "home",
+        "label": "Home goods"
+      },
+      {
+        "value": "beauty",
+        "label": "Beauty"
+      },
+      {
+        "value": "fashion",
+        "label": "Fashion"
+      },
+      {
+        "value": "packaging",
+        "label": "Packaging"
+      },
+      {
+        "value": "industrial",
+        "label": "Industrial"
+      },
+      {
+        "value": "furniture",
+        "label": "Furniture"
+      },
+      {
+        "value": "toys",
+        "label": "Toys"
+      },
+      {
+        "value": "auto",
+        "label": "Auto parts"
+      },
+      {
+        "value": "medical",
+        "label": "Medical supplies"
+      },
+      {
+        "value": "sports",
+        "label": "Sports goods"
+      },
+      {
+        "value": "other",
+        "label": "Other"
+      }
+    ],
+    "countries": [
+      {
+        "value": "azerbaijan",
+        "label": "Azerbaijan"
+      },
+      {
+        "value": "turkey",
+        "label": "Turkey"
+      },
+      {
+        "value": "russia",
+        "label": "Russia"
+      },
+      {
+        "value": "uae",
+        "label": "UAE"
+      },
+      {
+        "value": "kazakhstan",
+        "label": "Kazakhstan"
+      },
+      {
+        "value": "germany",
+        "label": "Germany"
+      },
+      {
+        "value": "uk",
+        "label": "United Kingdom"
+      },
+      {
+        "value": "other",
+        "label": "Other"
+      }
+    ],
+    "shipping": [
+      {
+        "value": "air",
+        "label": "Air"
+      },
+      {
+        "value": "sea",
+        "label": "Sea"
+      },
+      {
+        "value": "rail",
+        "label": "Rail"
+      },
+      {
+        "value": "truck",
+        "label": "Truck"
+      },
+      {
+        "value": "not-sure",
+        "label": "Not sure"
+      }
+    ],
+    "sources": [
+      {
+        "value": "",
+        "label": "Select"
+      },
+      {
+        "value": "google",
+        "label": "Google"
+      },
+      {
+        "value": "linkedin",
+        "label": "LinkedIn"
+      },
+      {
+        "value": "referral",
+        "label": "Referral"
+      },
+      {
+        "value": "instagram",
+        "label": "Instagram"
+      },
+      {
+        "value": "other",
+        "label": "Other"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Send us your request.",
+    "text": "Product, quantity, target price, and timeline are enough to begin.",
+    "name": "Name",
+    "contact": "Email or WhatsApp",
+    "need": "What do you need?",
+    "budget": "Budget range",
+    "optional": "Optional",
+    "placeholderContact": "your@email.com or +994…",
+    "placeholderNeed": "Product, quantity, target price",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "error": "Something went wrong. Please try WhatsApp or email directly.",
+    "successTitle": "Request received. Check your email.",
+    "successText": "We will review the details and reply within 24 hours.",
+    "direct": "Direct contact",
+    "response": "We reply within 24 hours.",
+    "scanPrompt": "Scan to connect instantly on WhatsApp.",
+    "continueWhatsapp": "Continue on WhatsApp →",
+    "whatsappLabel": "WhatsApp",
+    "validation": {
+      "nameRequired": "Name is required",
+      "contactRequired": "Email or WhatsApp is required",
+      "needRequired": "Please describe what you need",
+      "messageTooShort": "Message is too short"
+    }
+  },
+  "about": {
+    "eyebrow": "Founder",
+    "name": "Sarkhan Huseynov",
+    "intro": "Silk Road was built for importers who need a direct way to buy from China without losing control of price, quality, or delivery.",
+    "storyEyebrow": "Our Story",
+    "storyTitle": "Why Silk Road",
+    "story": [
+      "International trade becomes expensive when small details are handled late.",
+      "The work is practical: find the right factory, confirm the real cost, protect the order, and deliver it cleanly."
+    ],
+    "valuesEyebrow": "Our Values",
+    "valuesHeading": "How we operate.",
+    "values": [
+      [
+        "Trust",
+        "Clear terms, clear updates, no hidden movement."
+      ],
+      [
+        "Speed",
+        "Fast supplier checks without careless shortcuts."
+      ],
+      [
+        "Price",
+        "Negotiation focused on total landed cost."
+      ]
+    ],
+    "strip": {
+      "email": "hello@sarkhan.com",
+      "whatsapp": "+994 50 123 45 67",
+      "address": "Baku, Azerbaijan"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "eyebrow": "Article",
+    "detailText": "Insights on sourcing, supplier verification, inspection, and export routes.",
+    "posts": [
+      {
+        "slug": "china-sourcing-checklist",
+        "title": "China sourcing checklist",
+        "excerpt": "What to confirm before paying a supplier."
+      },
+      {
+        "slug": "factory-verification-guide",
+        "title": "Factory verification guide",
+        "excerpt": "How to separate factories from trading companies."
+      },
+      {
+        "slug": "shipping-from-china",
+        "title": "Shipping from China",
+        "excerpt": "How to choose air, sea, rail, or truck freight."
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "text": "This page is coming soon."
+  },
+  "termsPage": {
+    "title": "Terms of Use",
+    "text": "This page is coming soon."
+  }
+}
