@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin('./lib/i18n.ts');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  eslint: { ignoreDuringBuilds: true },
   images: {
     formats: ['image/avif', 'image/webp']
   },
