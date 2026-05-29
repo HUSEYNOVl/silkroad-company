@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import {createServiceSupabaseClient} from '@/lib/supabase/server';
 
+export const dynamic = 'force-dynamic';
+
 const scoreClasses: Record<string, string> = {
   hot: 'bg-red-100 text-red-700',
   warm: 'bg-amber-100 text-amber-700',
